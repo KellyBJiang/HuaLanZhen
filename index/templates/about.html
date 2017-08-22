@@ -1,0 +1,91 @@
+{% extends "header.html"%}
+{% load static%}
+{% block content%}
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">华兰珍</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="/">首页 </a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="#">艺术家介绍<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="/art">作品欣赏</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="/contacts">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="bg-faded p-4 my-4">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="{%static  'img/about_f.jpg'%}" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title m-0">阿峰 <small class="text-muted">写意画家</small></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>阿峰</h3>
+                    <p>生于1960年</p>
+                    <p>在老年大学学习写意花鸟</p> 
+                    <p>目前居住在哈尔滨。</p>
+                </div>
+            </div>
+        </div>
+             <div class="bg-faded p-4 my-4">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                         <img class="card-img-top" src="{% static 'img/about_h.jpg' %}" alt="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title m-0">阿华 <small class="text-muted">摄影师</small></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>阿华</h3>
+                    <p>生于1958年</p>
+                    <p>自学摄影</p>
+                    <p> 目前居住在绥化。</p>
+                </div>
+            </div>
+        </div>
+      <div class="bg-faded p-4 my-4">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                          <img class="card-img-top" src="{% static 'img/about_z.jpg' %}" alt="">
+                        <div class="card-body text-center">
+                             <h4 class="card-title m-0">阿珍 <small class="text-muted">山水画家</small></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>阿珍</h3>
+                    <p>生于1960年</p>
+                    <p>在老年大学学习国画山水</p> 
+                    <p>目前居住在哈尔滨。</p>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </div>
+    <!-- /.container -->
+
+{% endblock %}

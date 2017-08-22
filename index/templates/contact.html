@@ -1,0 +1,104 @@
+{% extends "header.html"%}
+{% load static %}
+{% block content%}
+     <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">华兰珍</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="/">首页 </a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="/about">艺术家介绍</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="/art">作品欣赏</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="/#">联系我们<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="bg-faded p-4 my-4">
+            <hr class="divider">
+            <h2 class="text-center text-lg text-uppercase my-0">华兰珍工作室</h2>
+            <hr class="divider">
+            <div class="row">
+                
+                <div class="col-lg-8">
+                   <img style="width: 100%; max-width: 730px;"  src="{% static 'img/3.jpg' %}">
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-0">联系电话:</h5>
+                    <div class="mb-4">123.456.7890</div>
+                    <h5 class="mb-0">Email:</h5>
+                    <div class="mb-4"><a href="mailto:name@example.com">aaa@bbb.com</a></div>
+                    <h5 class="mb-0">地址:</h5>
+                    <div class="mb-4">
+                        哈尔滨市南岗区 哈西大街
+                        <br> 黑龙江，中国
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--    <div class="bg-faded p-4 my-4">-->
+    <!--        <hr class="divider">-->
+    <!--        <h2 class="text-center text-lg text-uppercase my-0">Contact <strong>Form</strong></h2>-->
+    <!--        <hr class="divider">-->
+    <!--        <form>-->
+    <!--            <div class="row">-->
+    <!--                <div class="form-group col-lg-4">-->
+    <!--                    <label class="text-heading">Name</label>-->
+    <!--                    <input type="text" class="form-control">-->
+    <!--                </div>-->
+    <!--                <div class="form-group col-lg-4">-->
+    <!--                    <label class="text-heading">Email Address</label>-->
+    <!--                    <input type="email" class="form-control">-->
+    <!--                </div>-->
+    <!--                <div class="form-group col-lg-4">-->
+    <!--                    <label class="text-heading">Phone Number</label>-->
+    <!--                    <input type="tel" class="form-control">-->
+    <!--                </div>-->
+    <!--                <div class="clearfix"></div>-->
+    <!--                <div class="form-group col-lg-12">-->
+    <!--                    <label class="text-heading">Message</label>-->
+    <!--                    <textarea class="form-control" rows="6"></textarea>-->
+    <!--                </div>-->
+    <!--                <div class="form-group col-lg-12">-->
+    <!--                    <button type="submit" class="btn btn-secondary">Submit</button>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </form>-->
+    <!--    </div>-->
+
+    <!--</div>-->
+    <!-- /.container -->
+
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Zoom when clicked function for Google Map -->
+    <script>
+    $('.map-container')
+        .click(function() {
+            $(this).find('iframe').addClass('clicked')
+        })
+        .mouseleave(function() {
+            $(this).find('iframe').removeClass('clicked')
+        });
+    </script>
+
+{% endblock %}

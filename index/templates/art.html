@@ -1,0 +1,126 @@
+{% extends "header.html"%}
+{% block content%}
+{% load static%}
+<nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">华兰珍</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="/">首页</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="/about">艺术家介绍</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="/#">作品欣赏 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="/contacts">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+ <div class="bg-faded p-4 my-4">
+       <div id="columns">
+  <figure>
+  <img src="{% static 'artworks/9BCF6A64-831A-4C43-872E-AD7D2A6A034F-2680-00000485EF29CB5F_tmp.jpg'%}">
+	<figcaption>蔷薇 --阿华摄影</figcaption>
+	</figure>
+	
+	<figure>
+	<img src="{% static 'artworks/3920BAB0-6924-4D15-8843-CC4FA923D9BD-2680-00000485FF3006B7_tmp.jpg'%}">
+	<figcaption>植物 --阿华摄影</figcaption>
+	</figure>
+	
+  
+  
+      <figure>
+	<img src="{% static 'artworks/0001.jpg'%}">
+	<figcaption>花，工笔 --阿峰</figcaption>
+	</figure>
+  
+	<figure>
+	<img src="{% static 'artworks/IMG_7082.jpg'%}">
+	<figcaption>牡丹写意 --阿珍</figcaption>
+	</figure>
+	
+   <figure>
+	 <img src="{% static 'artworks/A224012E-1059-4547-9CFB-40E5FD32CC61-2680-00000485FA21BA42_tmp.jpg'%}">
+	<figcaption>罂粟  --阿华</figcaption>
+	</figure>
+	
+   <figure>
+	 <img src="{% static 'artworks/ABD7E883-2033-44B6-B8D6-8B31477ED0A3-2680-00000485F5383B75_tmp.jpg'%}">
+	<figcaption>植物微距  --阿华</figcaption>
+	</figure>
+  
+	<figure>
+	<img src="{% static 'artworks/IMG_7078.jpg' %}">
+	<figcaption>仿古山水 --阿珍</figcaption>
+	</figure>	
+  
+   <figure>
+	<img src="{% static 'artworks/IMG_7079.jpg' %}">
+	<figcaption>仿古山水  --阿珍</figcaption>
+	</figure>
+  
+    <figure>
+	<img src="{% static 'artworks/IMG_7081.jpg' %}">
+    <figcaption>牡丹写意 --阿珍</figcaption>
+	</figure>	
+      
+      
+    <figure>
+	<img src="{% static 'artworks/IMG_7083.jpg' %}">
+    <figcaption>牡丹写意  --阿珍</figcaption>
+	</figure>	
+      <!--<small>Art &copy; <a href="//clairehummel.com">Claire Hummel</a></small>-->
+      
+    <figure>
+	<img src="{% static 'artworks/IMG_7084.jpg' %}">
+    <figcaption>牡丹写意  --阿珍</figcaption>
+	</figure>	
+      
+    <figure>
+	<img src="{% static 'artworks/IMG_8945.jpg' %}">
+    <figcaption>山水  --阿珍</figcaption>
+	</figure>	
+      
+      
+    <figure>
+	<img src="{% static 'artworks/IMG_9168.jpg' %}">
+	<figcaption>工笔写意  --阿峰</figcaption>
+    <!--<figcaption>Tiana wearing the <i>robe de style</i> of the 1920’s</figcaption>-->
+	</figure>	
+      
+    <figure>
+	<img src="{% static 'artworks/IMG_9169.jpg' %}">
+    <figcaption>花朵  --阿峰</figcaption>
+	</figure>	
+      
+      
+    <figure>
+	<img src="{% static 'artworks/IMG_9170.jpg' %}">
+    <figcaption>茄 --阿峰</figcaption>
+	</figure>	
+      
+      
+	</div>
+
+        <!-- Pagination -->
+        <div class="bg-faded p-4 my-4">
+            <ul class="pagination justify-content-center mb-0">
+                <li class="page-item"><a class="page-link" href="#">&larr; Older</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">Newer &rarr;</a></li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+    <!-- /.container -->
+{% endblock %}
